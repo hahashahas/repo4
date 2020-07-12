@@ -1,0 +1,36 @@
+!SESSION 2020-07-11 09:37:14.688 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=13.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-07-11 09:38:09.317
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\小布丁'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.runtime 2 0 2020-07-11 09:39:55.447
+!MESSAGE Authorization infrastructure (org.eclipse.core.runtime.compatibility.auth) not installed.
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.core.internal.runtime.auth.AuthorizationDatabase cannot be found by org.eclipse.core.runtime_3.17.0.v20191122-2104
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:333)
+	at org.eclipse.core.internal.runtime.AuthorizationHandler.getAuthClass(AuthorizationHandler.java:51)
+	at org.eclipse.core.internal.runtime.AuthorizationHandler.loadKeyring(AuthorizationHandler.java:72)
+	at org.eclipse.core.internal.runtime.AuthorizationHandler.getAuthorizationInfo(AuthorizationHandler.java:265)
+	at org.eclipse.core.runtime.Platform.getAuthorizationInfo(Platform.java:671)
+	at org.tigris.subversion.subclipse.core.repo.SVNRepositoryLocation.retrieveUsername(SVNRepositoryLocation.java:316)
+	at org.tigris.subversion.subclipse.core.repo.SVNRepositoryLocation.getUsername(SVNRepositoryLocation.java:263)
+	at org.tigris.subversion.subclipse.core.repo.SVNRepositoryLocation.getSVNClient(SVNRepositoryLocation.java:278)
+	at org.tigris.subversion.subclipse.core.repo.SVNRepositoryLocation.validateConnection(SVNRepositoryLocation.java:408)
+	at org.tigris.subversion.subclipse.ui.wizards.CheckoutWizard$2.run(CheckoutWizard.java:224)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="emp" class="com.atguigu.spring5.Bean.Emp">
+        <property name="ename" value="aaa"></property>
+        <property name="gender" value="bbb"></property>
+        <property name="dept">
+            <bean id="dept" class="com.atguigu.spring5.Bean.dept">
+                <property name="dname" value="ccc"></property>
+            </bean>
+        </property>
+    </bean>
+</beans>

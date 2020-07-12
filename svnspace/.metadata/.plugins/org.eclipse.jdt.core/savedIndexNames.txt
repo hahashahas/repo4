@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+E:\work\svnspace\.metadata\.plugins\org.eclipse.jdt.core
+4212471707.index
+3093919158.index
+292184782.index

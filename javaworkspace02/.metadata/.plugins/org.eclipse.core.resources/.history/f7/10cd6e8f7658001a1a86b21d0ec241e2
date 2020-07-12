@@ -1,0 +1,15 @@
+package com.atguigu.java;
+
+public class personTest {
+	public static void main(String[] args) {
+		person p1=new person();
+		p1.eat();
+		Man man=new Man();
+		man.eat();
+		man.age=25;
+		man.earnMoney();
+		//对象的多态性
+		person p2=new Man();
+		p2.eat();
+	}
+}
